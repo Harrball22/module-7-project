@@ -1,0 +1,26 @@
+
+
+Array            |  Insert         |  Append
+------------------------------------------------------
+tinyArray        |  46.592 μs      |  188.157 μs
+smallArray       |  144.744 μs     |  131.662 μs
+mediumArray      |  198.14 μs      |  248.564 μs
+largeArray       |  7.801435 ms    |  662.082 μs
+extraLargeArray  |  861.034817 ms  |  4.100558 ms  
+
+
+
+Pattern that I see:
+Both Insert and Append start out around the same. The distance between them widens as the array gets larger with Insert taking longer.
+
+
+How does each funcion scale?
+Insert scales Quadraticly  O(n^2)
+Append scales Linear O(n)
+
+Append scales better because the curve of linear scaling will always be bettter than the curve of quadratic scaling. Eventually the Quadratic scaling function will take longer that the linear scaling function.
+
+
+
+
+
